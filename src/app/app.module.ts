@@ -1,3 +1,4 @@
+import { CounterService } from './counter.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
@@ -19,7 +20,7 @@ import { UserService } from './user.service';
     FormsModule,
     HttpModule
   ],
-  providers: [UserService],
+  providers: [UserService, CounterService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

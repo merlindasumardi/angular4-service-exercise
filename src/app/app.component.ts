@@ -7,11 +7,5 @@ import { UserService } from './user.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  activeUsers: any;
-  inactiveUsers: any;
 
-  constructor( private userService: UserService) {
-    this.activeUsers = userService.activeUsers;
-    this.inactiveUsers = userService.inactiveUsers;
-  }
 }
